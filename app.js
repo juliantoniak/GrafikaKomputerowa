@@ -50,7 +50,7 @@ function startGL()
   //Opis sceny 3D, położenie punktów w przestrzeni 3D w formacie X,Y,Z 
   let vertexPosition = [
   //Top
-    -1.0, +1.0, -1.0,  -1.0, +1.0, +1.0,  +1.0, +1.0, +1.0, //3 punkty po 3 składowe - X1,Y1,Z1, X2,Y2,Z2, X3,Y3,Z3 - 1 trójkąt
+    -1.0, +1.0, -1.0,  -1.0, +1.0, +1.0,  +1.0, +1.0, +1.0//, //3 punkty po 3 składowe - X1,Y1,Z1, X2,Y2,Z2, X3,Y3,Z3 - 1 trójkąt
     -1.0, +1.0, -1.0,  +1.0, +1.0, +1.0,  +1.0, +1.0, -1.0,
   //Left
     -1.0, -1.0, +1.0,  -1.0, +1.0, +1.0,  -1.0, -1.0, -1.0,
@@ -86,7 +86,7 @@ function startGL()
    0                         ,0                           ,-(zFar+zNear)/(zFar-zNear)  , -1,
    0                         ,0                           ,-(2*zFar*zNear)/(zFar-zNear) ,0.0,
   ];
-  let angle = 65.0; //Macierz transformacji świata - określenie położenia kamery 
+  let angle = 20.0; //Macierz transformacji świata - określenie położenia kamery 
   
   //obrot na Z
   let uMVMatrix_Z = [
